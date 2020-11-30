@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Nav = styled.div`
   background: var(--color-gray);
@@ -11,37 +12,110 @@ export const Nav = styled.div`
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   width: 100%;
   max-width: 1500px;
 `;
 
 export const NavbarTitle = styled.div`
-  padding: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1.6rem;
   color: var(--color-white);
   font-size: 1.4rem;
+  cursor: pointer;
 `;
 
 export const NavbarLinks = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
 
-  @media screen and (max-width: var(--breakpoint-navbar)) {
+  @media screen and (max-width: 1200px) {
     display: none;
   }
 `;
 
 export const NavbarLink = styled.div`
-  padding: 0.7rem;
-  font-size: .9rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0.8rem;
+  font-size: 0.9rem;
   color: var(--color-white);
+  cursor: pointer;
+  transition: 0.3s ease-out;
+
+  &:hover {
+    color: var(--color-green);
+  }
+
+  &:last-child {
+    padding-right: 1.6rem;
+  }
 `;
 
-export const NavbarHamburgerIcon = styled.div`
+export const NavbarHamburgerIconWrapper = styled.div`
   display: none;
 
-  @media screen and (max-width: var(--breakpoint-navbar)) {
-    display: block;
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 5rem;
+    font-size: 2rem;
+    color: var(--color-white);
+    cursor: pointer;
   }
-`
+`;
+
+export const NavbarHamburgerIcon = styled(FontAwesomeIcon)`
+  transform: ${({ isMobileNavOpen }) =>
+    isMobileNavOpen ? 'rotate(-90deg)' : ''};
+  transition: 0.3s ease-in-out;
+`;
+
+export const MobileNav = styled.div`
+  position: fixed;
+  left: 0;
+  top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-gray-transparent);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: 0.3s ease-in-out;
+  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+`;
+
+export const MobileNavbarLinks = styled.div`
+  text-align: center;
+`;
+
+export const MobileNavbarLink = styled.div`
+  font-size: 1.5rem;
+  color: var(--color-white);
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+
+  &:hover {
+    color: var(--color-green);
+  }
+`;
+
+export const MobileCloseIcon = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 0;
+  ${'' /* padding: 1.2rem 1.2rem 2rem 2rem; */}
+  height: 5rem;
+  font-size: 2rem;
+  width: 5rem;
+  color: var(--color-white);
+  cursor: pointer;
+`;
