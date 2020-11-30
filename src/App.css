@@ -8,6 +8,8 @@
 html {
   --color-gray: rgb(48, 48, 48);
   --color-white: rgb(255, 255, 255);
+
+  --breakpoint-navbar: 1200px;
 }
 
 /* encode-sans-expanded-regular - latin */

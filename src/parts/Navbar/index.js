@@ -4,9 +4,12 @@ import {
   NavbarTitle,
   NavbarLinks,
   NavbarLink,
+  NavbarHamburgerIcon
 } from './style';
 import React from 'react';
 import navbarLinks from '../../assets/navbar-links';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   return (
@@ -20,6 +23,11 @@ const Navbar = () => {
             return <NavbarLink>{name}</NavbarLink>;
           })}
         </NavbarLinks>
+        
+        <NavbarHamburgerIcon>
+          <FontAwesomeIcon icon={faBars}/>
+        </NavbarHamburgerIcon>
+        
       </NavbarContainer>
     </Nav>
   );
