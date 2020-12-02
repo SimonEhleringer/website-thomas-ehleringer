@@ -74,3 +74,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
   - dann auch nochmal gucken, dass auf allen Links, cursor Pointer ist
 
 - accessibility
+
+- Papas Datei aufteilen in: Heading, Paragraph, Address

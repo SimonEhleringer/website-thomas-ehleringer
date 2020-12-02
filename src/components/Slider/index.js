@@ -11,14 +11,6 @@ import {
 const Slider = () => {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
-  // const nextImage = () => {
-  //   if (activeImageIndex === willkommenImages.length - 1) {
-  //     setActiveImageIndex(0);
-  //   } else {
-  //     setActiveImageIndex(activeImageIndex + 1);
-  //   }
-  // };
-
   useEffect(() => {
     const nextImage = () => {
       if (activeImageIndex === willkommenImages.length - 1) {
