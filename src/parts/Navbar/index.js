@@ -32,13 +32,13 @@ const Navbar = () => {
             {navbarLinks.map((navbarLink) => {
               const { name } = navbarLink;
 
-              return <NavbarLink>{name}</NavbarLink>;
+              return <NavbarLink key={name}>{name}</NavbarLink>;
             })}
           </NavbarLinks>
 
           <NavbarHamburgerIconWrapper onClick={toggleIsMobileNavbarShown}>
             <NavbarHamburgerIcon
-              isMobileNavOpen={isMobileNavbarShown}
+              ismobilenavopen={isMobileNavbarShown.toString()}
               icon={faBars}
             />
           </NavbarHamburgerIconWrapper>
@@ -54,7 +54,7 @@ const Navbar = () => {
           {navbarLinks.map((navbarLink) => {
             const { name } = navbarLink;
 
-            return <MobileNavbarLink>{name}</MobileNavbarLink>;
+            return <MobileNavbarLink key={name}>{name}</MobileNavbarLink>;
           })}
         </MobileNavbarLinks>
       </MobileNav>

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Nav = styled.div`
+  top: 0;
   background: var(--color-gray);
   height: 5rem;
   display: flex;
@@ -70,8 +71,8 @@ export const NavbarHamburgerIconWrapper = styled.div`
 `;
 
 export const NavbarHamburgerIcon = styled(FontAwesomeIcon)`
-  transform: ${({ isMobileNavOpen }) =>
-    isMobileNavOpen ? 'rotate(-90deg)' : ''};
+  transform: ${({ ismobilenavopen }) =>
+    ismobilenavopen === 'true' ? 'rotate(-90deg)' : undefined};
   transition: 0.3s ease-in-out;
 `;
 

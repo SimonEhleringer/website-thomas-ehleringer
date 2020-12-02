@@ -1,7 +1,12 @@
 import React from 'react';
+import Willkommen from '../parts/Willkommen';
 
 const Index = () => {
-  return <div>Hello World</div>;
+  return (
+    <>
+      <Willkommen></Willkommen>
+    </>
+  );
 };
 
 export default Index;
