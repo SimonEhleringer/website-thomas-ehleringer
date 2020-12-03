@@ -76,3 +76,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - accessibility
 
 - Papas Datei aufteilen in: Heading, Paragraph, Address
+
+- Bilder rauszoomen sowie bei Fendt website
