@@ -1,18 +1,23 @@
 import React from 'react';
 import Slider from '../../components/Slider';
-import Info from '../../components/Info'
-import { WillkommenContainer, WillkommenWrapper } from './style'
+import { WillkommenWrapper } from './style';
+import WelcomeText from '../../components/WelcomeText';
 
 const Willkommen = () => {
   return (
-    <WillkommenWrapper>
-      <WillkommenContainer>
-        <Info></Info>
-        
+    <>
+      <WillkommenWrapper>
         <Slider></Slider>
-      </WillkommenContainer>
-      
-    </WillkommenWrapper>
+        <WelcomeText></WelcomeText>
+      </WillkommenWrapper>
+
+      <div>test</div>
+      <div>test</div>
+      <div>test</div>
+      <div>test</div>
+      <div>test</div>
+      <div>test</div>
+    </>
   );
 };
 
