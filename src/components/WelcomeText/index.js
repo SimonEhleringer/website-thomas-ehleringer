@@ -2,12 +2,16 @@ import React from 'react';
 import welcomeText from '../../assets/welcome-text';
 import {
   WelcomeTextSection,
+  WelcomeTextWrapper,
   WelcomeTextContainer,
   WelcomeTextHeading,
   WelcomeTextParagraph,
+  WelcomeTextAddressJobTitleWrapper,
+  WelcomeTextAddressJobTitleContainer,
   WelcomeTextAddress,
   WelcomeTextAddressLine,
-  WelcomeTextJobTitle,
+  WelcomeTextJobTitleWrapper,
+  WelcomeTextJobTitle
 } from './style';
 
 const WelcomeText = () => {
@@ -15,25 +19,33 @@ const WelcomeText = () => {
 
   return (
     <WelcomeTextSection>
-      <WelcomeTextContainer>
-        <WelcomeTextHeading>{heading}</WelcomeTextHeading>
+      <WelcomeTextWrapper>
+        <WelcomeTextContainer>
+          <WelcomeTextHeading>{heading}</WelcomeTextHeading>
 
-        {paragraphs.map((p, index) => {
-          return <WelcomeTextParagraph key={index}>{p}</WelcomeTextParagraph>;
-        })}
-
-        <WelcomeTextAddress>
-          {address.map((addressLine, index) => {
-            return (
-              <WelcomeTextAddressLine key={index}>
-                {addressLine}
-              </WelcomeTextAddressLine>
-            );
+          {paragraphs.map((p, index) => {
+            return <WelcomeTextParagraph key={index}>{p}</WelcomeTextParagraph>;
           })}
-        </WelcomeTextAddress>
+        </WelcomeTextContainer>
+      </WelcomeTextWrapper>
 
-        <WelcomeTextJobTitle>{jobTitle}</WelcomeTextJobTitle>
-      </WelcomeTextContainer>
+      <WelcomeTextAddressJobTitleWrapper>
+          <WelcomeTextAddressJobTitleContainer>
+            <WelcomeTextAddress>
+              {address.map((addressLine, index) => {
+                return (
+                  <WelcomeTextAddressLine key={index}>
+                    {addressLine}
+                  </WelcomeTextAddressLine>
+                );
+              })}
+            </WelcomeTextAddress>
+
+            <WelcomeTextJobTitleWrapper>
+              <WelcomeTextJobTitle>{jobTitle}</WelcomeTextJobTitle>
+            </WelcomeTextJobTitleWrapper>
+          </WelcomeTextAddressJobTitleContainer>
+        </WelcomeTextAddressJobTitleWrapper>
     </WelcomeTextSection>
   );
 };

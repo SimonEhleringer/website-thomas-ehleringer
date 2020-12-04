@@ -3,7 +3,14 @@ import styled from 'styled-components';
 export const WelcomeTextSection = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: column;
+`;
+
+export const WelcomeTextWrapper = styled.div`
+  width: 100%;
+  display: flex;
   justify-content: center;
+  padding: 3rem 0;
 `;
 
 export const WelcomeTextContainer = styled.div`
@@ -15,15 +22,48 @@ export const WelcomeTextContainer = styled.div`
 `;
 
 export const WelcomeTextHeading = styled.h1`
-  padding: 1rem;
+  padding: .5rem 0;
   font-size: 3rem;
-  ${'' /* font-weight: bold !important; */}
 `;
 
-export const WelcomeTextParagraph = styled.p``;
+export const WelcomeTextParagraph = styled.p`
+  text-align: center;
+  padding: .5rem 0;
+  font-size: 1.2rem;
+`;
 
-export const WelcomeTextAddress = styled.div``;
+export const WelcomeTextAddressJobTitleWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  background-color: var(--color-gray-light);
+`;
 
-export const WelcomeTextAddressLine = styled.p``;
+export const WelcomeTextAddressJobTitleContainer = styled.div`
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+`;
 
-export const WelcomeTextJobTitle = styled.div``;
+export const WelcomeTextAddress = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const WelcomeTextAddressLine = styled.p`
+  text-align: center;
+`;
+
+export const WelcomeTextJobTitleWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const WelcomeTextJobTitle = styled.p`
+  max-width: 300px;  
+  text-align: center;
+`;
