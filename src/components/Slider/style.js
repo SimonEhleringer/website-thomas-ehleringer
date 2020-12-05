@@ -47,14 +47,14 @@ export const SliderImageTextsWrapper = styled.div`
 `;
 
 export const SliderImageTextWrapper = styled.div`
+  ${'' /* background-color: var(--color-gray-light); */}
   position: absolute;
   top: ${({ positionY }) => positionY}%;
   left: ${({ positionX }) => positionX}%;
   background-color: var(--color-white);
-  padding: 0.8rem 1.5rem;
-  opacity: ${({ show }) => (show ? '0.9' : '0')};
+  padding: 0.6rem 1.6rem;
+  opacity: ${({ show }) => (show ? '0.8' : '0')};
   transition: opacity 1.5s ease-in;
-  border-radius: 0.5rem;
   transform: translate(-50%, -50%);
 
   @media screen and (max-width: 500px) {
@@ -67,10 +67,13 @@ export const SliderImageTextWrapper = styled.div`
 
 export const SliderImageText = styled.p`
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--color-gray-dark);
+  color: dark-grey;
+  font-family: 'Dancing Script';
+  font-weight: 700;
 
   @media screen and (max-width: 500px) {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 `;

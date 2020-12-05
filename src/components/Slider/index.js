@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import willkommenImages from '../../assets/willkommen-images';
 import {
   SliderContainer,
@@ -41,11 +41,12 @@ const Slider = () => {
       ></SliderImage>
 
       <SliderImageTextsWrapper>
-        {willkommenImages[activeImageIndex].texts.map((textObj) => {
+        {willkommenImages[activeImageIndex].texts.map((textObj, index) => {
           const { text, positionX, positionY } = textObj;
 
           return (
             <SliderImageTextWrapper
+              key={index}
               show={showTexts}
               positionX={positionX}
               positionY={positionY}
