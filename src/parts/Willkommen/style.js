@@ -6,4 +6,12 @@ export const WillkommenWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media screen and (max-width: 700px) {
+    height: 125vh;
+  }
+
+  @media screen and (max-width: 350px) {
+    height: 150vh;
+  }
 `;

@@ -6,11 +6,12 @@
 }
 
 html {
-  --color-gray: rgb(48, 48, 48);
+  --color-gray-dark: rgb(40, 40, 40);
   --color-gray-light: rgb(242, 242, 242);
   --color-white: rgb(255, 255, 255);
   --color-green: rgb(70, 150, 60);
-  --color-gray-transparent: rgb(24, 24, 24);
+  --color-gray-darker: rgb(24, 24, 24);
+  --color-gray: rgb(190, 190, 190);
 }
 
 /* encode-sans-expanded-regular - latin */

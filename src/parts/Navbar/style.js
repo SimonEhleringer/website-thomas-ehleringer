@@ -3,11 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Nav = styled.div`
   top: 0;
-  background: var(--color-gray);
+  background: var(--color-gray-dark);
   height: 5rem;
   display: flex;
   justify-content: center;
   position: sticky;
+  z-index: 999;
 `;
 
 export const NavbarContainer = styled.div`
@@ -82,12 +83,13 @@ export const MobileNav = styled.div`
   top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
   width: 100%;
   height: 100%;
-  background-color: var(--color-gray-transparent);
+  background-color: var(--color-gray-darker);
   justify-content: center;
   align-items: center;
   display: flex;
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+  z-index: 1000;
 `;
 
 export const MobileNavbarLinks = styled.div`
