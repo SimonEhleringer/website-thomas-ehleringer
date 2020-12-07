@@ -78,3 +78,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Papas Datei aufteilen in: Heading, Paragraph, Address
 
 - Bilder rauszoomen sowie bei Fendt website
+
+- Das Modal soll perfekt responsiv sein
+
+- Feinschliff bei den Fonts. Die sehen manchmal noch nicht geil aus
+
+- Performance vom Slider

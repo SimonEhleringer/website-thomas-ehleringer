@@ -2,20 +2,18 @@ import React from 'react';
 import {
   CardContainer,
   CardImageWrapper,
-  CardImageContainer,
+  CardImage,
   CardHeadingContainer,
   CardHeading,
 } from './style';
 
 import Slider from '../Slider';
 
-const Card = ({ images, heading }) => {
+const Card = ({ image, heading, onClick }) => {
   return (
-    <CardContainer>
+    <CardContainer onClick={onClick}>
       <CardImageWrapper>
-        <CardImageContainer>
-          <Slider images={images} showText={false}></Slider>
-        </CardImageContainer>
+        <CardImage src={image}></CardImage>
       </CardImageWrapper>
 
       <CardHeadingContainer>

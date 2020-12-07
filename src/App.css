@@ -12,6 +12,8 @@ html {
   --color-green: rgb(70, 150, 60);
   --color-gray-darker: rgb(24, 24, 24);
   --color-gray: rgb(190, 190, 190);
+  --color-gray-darker-transparent: rgba(24, 24, 24, 0.7);
+  --color-transparent: rgba(0, 0, 0, 0);
 }
 
 /* encode-sans-expanded-regular - latin */

@@ -6,7 +6,6 @@ export const CardContainer = styled.div`
   flex-direction: column;
   cursor: pointer;
   transition: 0.2s ease-in-out;
-  border-radius: 1rem;
   box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
 
   &:hover {
@@ -20,12 +19,12 @@ export const CardImageWrapper = styled.div`
   position: relative;
 `;
 
-export const CardImageContainer = styled.div`
+export const CardImage = styled.img`
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
 `;
 
 export const CardHeadingContainer = styled.div`
