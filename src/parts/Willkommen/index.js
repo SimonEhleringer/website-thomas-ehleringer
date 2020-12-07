@@ -2,21 +2,15 @@ import React from 'react';
 import Slider from '../../components/Slider';
 import { WillkommenWrapper } from './style';
 import WelcomeText from '../../components/WelcomeText';
+import willkommenImages from '../../assets/willkommen-images';
 
 const Willkommen = () => {
   return (
     <>
       <WillkommenWrapper>
-        <Slider></Slider>
+        <Slider images={willkommenImages} showText={true}></Slider>
         <WelcomeText></WelcomeText>
       </WillkommenWrapper>
-
-      <div>test</div>
-      <div>test</div>
-      <div>test</div>
-      <div>test</div>
-      <div>test</div>
-      <div>test</div>
     </>
   );
 };

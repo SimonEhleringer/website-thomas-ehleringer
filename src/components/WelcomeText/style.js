@@ -16,6 +16,7 @@ export const WelcomeTextWrapper = styled.div`
 export const WelcomeTextContainer = styled.div`
   width: 100%;
   max-width: 1500px;
+  padding: 0 1.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
