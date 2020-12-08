@@ -36,6 +36,7 @@ export const ModalContainer = styled.div`
   max-height: 100%;
   max-width: 85%;
   position: relative;
+  overflow: hidden;
 
   @media screen and (max-width: 1500px) {
     display: flex;
@@ -58,7 +59,7 @@ export const ModalContainer = styled.div`
 
 export const ModalTextSectionContainer = styled.div`
   padding: 1.5rem;
-  display: flex;
+  display: block;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -72,6 +73,7 @@ export const ModalHeading = styled.p`
   margin-bottom: 0.5rem;
   border-bottom: 2px solid var(--color-green);
   text-align: center;
+  word-break: break-word;
 
   @media screen and (max-width: 600px) {
     font-size: 1.5rem;
@@ -79,6 +81,10 @@ export const ModalHeading = styled.p`
 
   @media screen and (max-width: 400px) {
     font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 1rem;
   }
 `;
 
@@ -92,6 +98,14 @@ export const ModalTextContainer = styled.div`
 export const ModalText = styled.p`
   text-align: center;
   font-size: 1.2rem;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.1rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const ModalImageContainer = styled.div`
@@ -120,5 +134,5 @@ export const ModalCloseIconContainer = styled.div`
   width: 4rem;
   padding: 0 0 1rem 1rem;
   cursor: pointer;
-  color: var(--color-gray-dark);
+  color: var(--color-gray-darker);
 `;

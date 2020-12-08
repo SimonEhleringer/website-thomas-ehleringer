@@ -13,6 +13,14 @@ export const LeistungsangebotHeading = styled.p`
   border-bottom: 2px solid var(--color-green);
   padding: 0.5rem 0;
   margin-bottom: 0.5rem;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.8rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const LeistungsangebotContainer = styled.div`

@@ -29,12 +29,28 @@ export const WelcomeTextHeading = styled.p`
   margin-bottom: 0.5rem;
   color: var(--color-gray-darker);
   text-align: center;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.8rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const WelcomeTextParagraph = styled.p`
   text-align: center;
   padding: 0.5rem 0;
   font-size: 1.3rem;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 1.1rem;
+  }
 `;
 
 export const WelcomeTextAddressJobTitleWrapper = styled.div`
@@ -68,6 +84,10 @@ export const WelcomeTextAddress = styled.div`
 
 export const WelcomeTextAddressLine = styled.p`
   text-align: center;
+
+  @media screen and (max-width: 400px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const WelcomeTextJobTitleWrapper = styled.div`
@@ -79,4 +99,8 @@ export const WelcomeTextJobTitle = styled.p`
   max-width: 300px;
   text-align: center;
   font-style: italic;
+
+  @media screen and (max-width: 400px) {
+    font-size: 0.9rem;
+  }
 `;

@@ -106,6 +106,14 @@ export const MobileNavbarLink = styled.div`
   &:hover {
     color: var(--color-green);
   }
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.3rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 1.1rem;
+  }
 `;
 
 export const MobileCloseIcon = styled.div`

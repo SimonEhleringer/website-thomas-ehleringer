@@ -73,7 +73,11 @@ export const SliderImageText = styled.p`
   font-family: 'Dancing Script';
   font-weight: 700;
 
+  @media screen and (max-width: 800px) {
+    font-size: 1.4rem;
+  }
+
   @media screen and (max-width: 500px) {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 `;

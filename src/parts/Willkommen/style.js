@@ -8,10 +8,10 @@ export const WillkommenWrapper = styled.div`
   justify-content: space-between;
 
   @media screen and (max-width: 700px) {
-    height: 125vh;
+    height: 110vh;
   }
 
   @media screen and (max-width: 350px) {
-    height: 150vh;
+    height: 130vh;
   }
 `;

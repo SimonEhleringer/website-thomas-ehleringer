@@ -40,4 +40,12 @@ export const CardHeading = styled.p`
   font-size: 1.2rem;
   text-align: center;
   color: var(--color-gray-dark);
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.1rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 1rem;
+  }
 `;
