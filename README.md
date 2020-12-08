@@ -84,3 +84,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Feinschliff bei den Fonts. Die sehen manchmal noch nicht geil aus
 
 - Performance vom Slider
+
+- Gesamte Website auf Galaxy-Fold ist etwas verbuggt
