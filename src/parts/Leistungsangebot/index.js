@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import leistungsangebot from '../../assets/leistungsangebot';
-import {
-  LeistungsangebotWrapper,
-  LeistungsangebotContainer,
-  LeistungsangebotHeading,
-} from './style';
+import Heading from '../../components/Heading';
+import { LeistungsangebotWrapper, LeistungsangebotContainer } from './style';
 import Card from '../../components/Card';
 import Modal from '../../components/Modal';
 
@@ -33,7 +30,7 @@ const Leistungsangebot = () => {
   return (
     <>
       <LeistungsangebotWrapper>
-        <LeistungsangebotHeading>{heading}</LeistungsangebotHeading>
+        <Heading>{heading}</Heading>
 
         <LeistungsangebotContainer>
           {leistungsangebote.map((leistung, index) => {

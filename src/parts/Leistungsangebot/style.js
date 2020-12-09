@@ -8,21 +8,6 @@ export const LeistungsangebotWrapper = styled.div`
   padding: 1.5rem 0;
 `;
 
-export const LeistungsangebotHeading = styled.p`
-  font-size: 2rem;
-  border-bottom: 2px solid var(--color-green);
-  padding: 0.5rem 0;
-  margin-bottom: 0.5rem;
-
-  @media screen and (max-width: 600px) {
-    font-size: 1.8rem;
-  }
-
-  @media screen and (max-width: 400px) {
-    font-size: 1.5rem;
-  }
-`;
-
 export const LeistungsangebotContainer = styled.div`
   max-width: 1500px;
   width: 100%;
