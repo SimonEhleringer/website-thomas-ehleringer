@@ -1,10 +1,9 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const ReferenzenWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--color-gray-lighter);
 `;
 
 export const ReferenzenContainer = styled.div`
