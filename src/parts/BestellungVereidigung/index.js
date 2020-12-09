@@ -1,14 +1,14 @@
 import React from 'react';
 import bestellungVereidigung from '../../assets/bestellung-vereidigung';
+import Wrapper from '../../components/Wrapper';
+import Container from '../../components/Container';
+import Heading from '../../components/Heading';
+import Paragraph from '../../components/Paragraph';
+import SubSection from '../../components/SubSection';
+import SubSectionParagraph from '../../components/SubSectionParagraph';
+import BulletPointsContainer from '../../components/BulletPointsContainer';
+import BulletPoint from '../../components/BulletPoint';
 import {
-  BestellungVereidigungWrapper,
-  BestellungVereidigungContainer,
-  BestellungVereidigungHeading,
-  BestellungVereidigungParagraph,
-  BestellungVereidigungTopics,
-  BestellungVereidigungTopicsParagraph,
-  BestellungVereridigungBulletPointsContainer,
-  BestellungVereidigungBulletPoint,
   BestellungVereidigungUrkundeDownload,
   BestellungVereidigungUrkundeDownloadSpan,
   BestellungVereidigungUrkundeDownloadA,
@@ -18,36 +18,26 @@ const BestellungVereidigung = () => {
   const { heading, texts, topics, urkunde } = bestellungVereidigung;
 
   return (
-    <BestellungVereidigungWrapper>
-      <BestellungVereidigungContainer>
-        <BestellungVereidigungHeading>{heading}</BestellungVereidigungHeading>
+    <Wrapper>
+      <Container>
+        <Heading>{heading}</Heading>
 
         {texts.firstText.map((paragraph, index) => {
-          return (
-            <BestellungVereidigungParagraph key={index}>
-              {paragraph}
-            </BestellungVereidigungParagraph>
-          );
+          return <Paragraph key={index}>{paragraph}</Paragraph>;
         })}
-      </BestellungVereidigungContainer>
-      <BestellungVereidigungTopics>
-        <BestellungVereidigungContainer>
+      </Container>
+      <SubSection>
+        <Container>
           {topics.text.map((paragraph, index) => {
             return (
-              <BestellungVereidigungTopicsParagraph key={index}>
-                {paragraph}
-              </BestellungVereidigungTopicsParagraph>
+              <SubSectionParagraph key={index}>{paragraph}</SubSectionParagraph>
             );
           })}
-          <BestellungVereridigungBulletPointsContainer>
+          <BulletPointsContainer>
             {topics.bulletPoints.map((bulletPoint, index) => {
-              return (
-                <BestellungVereidigungBulletPoint key={index}>
-                  {bulletPoint}
-                </BestellungVereidigungBulletPoint>
-              );
+              return <BulletPoint key={index}>{bulletPoint}</BulletPoint>;
             })}
-          </BestellungVereridigungBulletPointsContainer>
+          </BulletPointsContainer>
 
           <BestellungVereidigungUrkundeDownload>
             <BestellungVereidigungUrkundeDownloadSpan>
@@ -64,19 +54,15 @@ const BestellungVereidigung = () => {
               Sachverständiger einzusehen.
             </BestellungVereidigungUrkundeDownloadSpan>
           </BestellungVereidigungUrkundeDownload>
-        </BestellungVereidigungContainer>
-      </BestellungVereidigungTopics>
+        </Container>
+      </SubSection>
 
-      <BestellungVereidigungContainer>
+      <Container>
         {texts.secondText.map((paragraph, index) => {
-          return (
-            <BestellungVereidigungParagraph key={index}>
-              {paragraph}
-            </BestellungVereidigungParagraph>
-          );
+          return <Paragraph key={index}>{paragraph}</Paragraph>;
         })}
-      </BestellungVereidigungContainer>
-    </BestellungVereidigungWrapper>
+      </Container>
+    </Wrapper>
   );
 };
 

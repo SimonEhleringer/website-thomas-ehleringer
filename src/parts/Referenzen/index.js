@@ -1,54 +1,42 @@
 import React from 'react';
 import referenzen from '../../assets/referenzen';
-import {
-  ReferenzenWrapper,
-  ReferenzenContainer,
-  ReferenzenHeading,
-  ReferenzenParagraph,
-  ReferenzenProjects,
-  ReferenzenProjectsParagraph,
-  ReferenzenBulletPointsContainer,
-  ReferenzenBulletPoint,
-} from './style';
+import Wrapper from '../../components/Wrapper';
+import Container from '../../components/Container';
+import Heading from '../../components/Heading';
+import Paragraph from '../../components/Paragraph';
+import SubSection from '../../components/SubSection';
+import SubSectionParagraph from '../../components/SubSectionParagraph';
+import BulletPointsContainer from '../../components/BulletPointsContainer';
+import BulletPoint from '../../components/BulletPoint';
 
 const Referenzen = () => {
   const { heading, texts, projects } = referenzen;
 
   return (
-    <ReferenzenWrapper>
-      <ReferenzenContainer>
-        <ReferenzenHeading>{heading}</ReferenzenHeading>
+    <Wrapper>
+      <Container>
+        <Heading>{heading}</Heading>
 
         {texts.firstText.map((paragraph, index) => {
-          return (
-            <ReferenzenParagraph key={index}>
-              {paragraph}
-            </ReferenzenParagraph>
-          );
+          return <Paragraph key={index}>{paragraph}</Paragraph>;
         })}
-      </ReferenzenContainer>
+      </Container>
 
-      <ReferenzenProjects>
-        <ReferenzenContainer>
+      <SubSection>
+        <Container>
           {projects.text.map((paragraph, index) => {
             return (
-              <ReferenzenProjectsParagraph key={index}>
-                {paragraph}
-              </ReferenzenProjectsParagraph>
+              <SubSectionParagraph key={index}>{paragraph}</SubSectionParagraph>
             );
           })}
-          <ReferenzenBulletPointsContainer>
+          <BulletPointsContainer>
             {projects.bulletPoints.map((bulletPoint, index) => {
-              return (
-                <ReferenzenBulletPoint key={index}>
-                  {bulletPoint}
-                </ReferenzenBulletPoint>
-              );
+              return <BulletPoint key={index}>{bulletPoint}</BulletPoint>;
             })}
-          </ReferenzenBulletPointsContainer>
-        </ReferenzenContainer>
-      </ReferenzenProjects>
-    </ReferenzenWrapper>
+          </BulletPointsContainer>
+        </Container>
+      </SubSection>
+    </Wrapper>
   );
 };
 
