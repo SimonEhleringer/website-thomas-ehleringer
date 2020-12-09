@@ -4,6 +4,7 @@ export const WelcomeTextSection = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: var(--color-white);
 `;
 
 export const WelcomeTextWrapper = styled.div`
@@ -62,6 +63,8 @@ export const WelcomeTextAddressJobTitleWrapper = styled.div`
   border-top: 1px solid var(--color-gray);
   border-bottom: 1px solid var(--color-gray);
 `;
+
+
 
 export const WelcomeTextAddressJobTitleContainer = styled.div`
   width: 100%;

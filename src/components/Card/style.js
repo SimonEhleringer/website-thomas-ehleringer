@@ -34,12 +34,15 @@ export const CardHeadingContainer = styled.div`
   align-items: center;
   flex-grow: 1;
   background-color: var(--color-white);
+  .background-color: var(--color-gray-light);
+  .color: var(--color-white);
+  .border: 1px solid var(--color-gray);
+  .border-top: none;
 `;
 
 export const CardHeading = styled.p`
   font-size: 1.2rem;
   text-align: center;
-  color: var(--color-gray-dark);
 
   @media screen and (max-width: 600px) {
     font-size: 1.1rem;
