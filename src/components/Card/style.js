@@ -34,10 +34,6 @@ export const CardHeadingContainer = styled.div`
   align-items: center;
   flex-grow: 1;
   background-color: var(--color-white);
-  .background-color: var(--color-gray-light);
-  .color: var(--color-white);
-  .border: 1px solid var(--color-gray);
-  .border-top: none;
 `;
 
 export const CardHeading = styled.p`

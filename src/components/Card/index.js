@@ -7,8 +7,6 @@ import {
   CardHeading,
 } from './style';
 
-import Slider from '../Slider';
-
 const Card = ({ image, heading, onClick }) => {
   return (
     <CardContainer onClick={onClick}>
