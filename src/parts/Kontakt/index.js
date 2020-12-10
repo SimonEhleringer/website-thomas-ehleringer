@@ -3,10 +3,19 @@ import Wrapper from '../../components/Wrapper';
 import kontakt from '../../assets/kontakt';
 import Heading from '../../components/Heading';
 import Container from '../../components/Container';
-import { KontaktContainer, KontaktImgWrapper, KontaktImg, KontaktAddressJobtitleWrapper, KontaktAddress, KontaktAddressLine, KontaktJobTitleWrapper, KontaktJobTitle } from './style'
+import {
+  KontaktContainer,
+  KontaktImgWrapper,
+  KontaktImg,
+  KontaktAddressJobtitleContainer,
+  KontaktAddress,
+  KontaktAddressLine,
+  KontaktJobTitleWrapper,
+  KontaktJobTitle,
+} from './style';
 
 const Kontakt = () => {
-  const { heading, image, address, jobTitle} = kontakt;
+  const { heading, image, address, jobTitle } = kontakt;
 
   return (
     <Wrapper>
@@ -15,10 +24,10 @@ const Kontakt = () => {
 
         <KontaktContainer>
           <KontaktImgWrapper>
-            <KontaktImg src={image}/>
+            <KontaktImg src={image} />
           </KontaktImgWrapper>
 
-          <KontaktAddressJobtitleWrapper>
+          <KontaktAddressJobtitleContainer>
             <KontaktAddress>
               {address.map((addressLine, index) => {
                 return (
@@ -30,16 +39,13 @@ const Kontakt = () => {
             </KontaktAddress>
 
             <KontaktJobTitleWrapper>
-              <div>
               <KontaktJobTitle>{jobTitle}</KontaktJobTitle>
-              </div>
-              
             </KontaktJobTitleWrapper>
-            </KontaktAddressJobtitleWrapper>
+          </KontaktAddressJobtitleContainer>
         </KontaktContainer>
       </Container>
     </Wrapper>
   );
 };
 
-export default Kontakt
+export default Kontakt;
