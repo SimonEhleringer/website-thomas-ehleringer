@@ -15,10 +15,10 @@ import {
 } from './style';
 
 const Kontakt = () => {
-  const { heading, image, address, jobTitle } = kontakt;
+  const { id, heading, image, address, jobTitle } = kontakt;
 
   return (
-    <Wrapper>
+    <Wrapper id={id}>
       <Container>
         <Heading>{heading}</Heading>
 

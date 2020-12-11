@@ -1,4 +1,5 @@
 const bestellungVereidigung = {
+  id: 'bestellung-vereidigung',
   heading: 'Öffentliche Bestellung und Vereidigung',
 
   texts: {

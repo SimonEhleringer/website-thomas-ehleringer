@@ -1,4 +1,5 @@
 const referenzen = {
+  id: 'referenzen',
   heading: 'Referenzen',
 
   texts: {

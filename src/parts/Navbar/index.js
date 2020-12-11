@@ -30,9 +30,9 @@ const Navbar = () => {
           <NavbarTitle>THOMAS EHLERINGER</NavbarTitle>
           <NavbarLinks>
             {navbarLinks.map((navbarLink) => {
-              const { name } = navbarLink;
+              const { name, to } = navbarLink;
 
-              return <NavbarLink key={name}>{name}</NavbarLink>;
+              return <NavbarLink key={name} activeClass="active" to={to} smooth={true} offset={-80} duration={500} spy={true}>{name}</NavbarLink>;
             })}
           </NavbarLinks>
 
@@ -52,9 +52,9 @@ const Navbar = () => {
 
         <MobileNavbarLinks>
           {navbarLinks.map((navbarLink) => {
-            const { name } = navbarLink;
+            const { name, to } = navbarLink;
 
-            return <MobileNavbarLink key={name}>{name}</MobileNavbarLink>;
+            return <MobileNavbarLink onClick={toggleIsMobileNavbarShown} key={name} to={to} smooth={true} offset={-80} duration={500}>{name}</MobileNavbarLink>;
           })}
         </MobileNavbarLinks>
       </MobileNav>

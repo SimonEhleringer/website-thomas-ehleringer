@@ -15,10 +15,10 @@ import {
 } from './style';
 
 const BestellungVereidigung = () => {
-  const { heading, texts, topics, urkunde } = bestellungVereidigung;
+  const { id, heading, texts, topics, urkunde } = bestellungVereidigung;
 
   return (
-    <Wrapper>
+    <Wrapper id={id}>
       <Container>
         <Heading>{heading}</Heading>
 

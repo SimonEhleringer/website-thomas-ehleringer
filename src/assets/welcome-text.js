@@ -1,6 +1,7 @@
 import  { address, jobTitle } from './address-jobTitle';
 
 const welcomeText = {
+  id: 'willkommen',
   heading: 'Herzlich Willkommen',
   paragraphs: [
     'Wenn es um Wertermittlung, strategische Entscheidungen, landwirtschaftliche oder betriebswirtschaftliche Fachfragen geht, ist Kompetenz gefragt.',

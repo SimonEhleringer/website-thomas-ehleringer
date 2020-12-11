@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-scroll';
 
 export const Nav = styled.div`
   top: 0;
@@ -38,14 +39,14 @@ export const NavbarLinks = styled.div`
   }
 `;
 
-export const NavbarLink = styled.div`
+export const NavbarLink = styled(Link)`
   display: flex;
   align-items: center;
   padding: 0 0.8rem;
   font-size: 0.9rem;
   color: var(--color-white);
   cursor: pointer;
-  transition: 0.3s ease-out;
+  transition: 0.3s color ease-out;
 
   &:hover {
     color: var(--color-green);
@@ -53,6 +54,11 @@ export const NavbarLink = styled.div`
 
   &:last-child {
     padding-right: 1.6rem;
+  }
+
+  &.active {
+    border-bottom: 3px solid var(--color-green);
+    border-top: 3px solid transparent;
   }
 `;
 
@@ -94,9 +100,12 @@ export const MobileNav = styled.div`
 
 export const MobileNavbarLinks = styled.div`
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
-export const MobileNavbarLink = styled.div`
+export const MobileNavbarLink = styled(Link)`
   font-size: 1.5rem;
   color: var(--color-white);
   padding: 1rem;

@@ -18,11 +18,11 @@ import {
 import willkommenImages from '../../assets/willkommen-images';
 
 const Willkommen = () => {
-  const { heading, paragraphs, address, jobTitle } = welcomeText;
+  const { id, heading, paragraphs, address, jobTitle } = welcomeText;
 
   return (
     <>
-      <WillkommenWrapper>
+      <WillkommenWrapper id={id}>
         <Slider images={willkommenImages} showText={true}></Slider>
 
         <WelcomeTextSection>

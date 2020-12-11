@@ -10,10 +10,10 @@ import BulletPointsContainer from '../../components/BulletPointsContainer';
 import BulletPoint from '../../components/BulletPoint';
 
 const Referenzen = () => {
-  const { heading, texts, projects } = referenzen;
+  const { id, heading, texts, projects } = referenzen;
 
   return (
-    <Wrapper>
+    <Wrapper id={id}>
       <Container>
         <Heading>{heading}</Heading>
 

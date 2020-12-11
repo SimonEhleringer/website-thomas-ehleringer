@@ -11,7 +11,7 @@ const Leistungsangebot = () => {
   const [modalHeading, setModalHeading] = useState('');
   const [modalText, setModalText] = useState('');
 
-  const { heading, leistungsangebote } = leistungsangebot;
+  const { id, heading, leistungsangebote } = leistungsangebot;
 
   const handleCardClick = (index) => {
     const { image, heading, description } = leistungsangebote[index];
@@ -29,7 +29,7 @@ const Leistungsangebot = () => {
 
   return (
     <>
-      <LeistungsangebotWrapper>
+      <LeistungsangebotWrapper id={id}>
         <Heading>{heading}</Heading>
 
         <LeistungsangebotContainer>

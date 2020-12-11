@@ -1,4 +1,5 @@
 const leistungsangebot = {
+  id: 'leistungsangebot',
   heading: 'Leistungsangebot',
   leistungsangebote: [
     {
