@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const ModalBackground = styled.div`
   position: fixed;
-  top: ${({ isOpen }) => (isOpen ? '5rem' : '200%')};
+  top: ${({ isOpen }) => (isOpen ? '80px' : '200%')};
   left: 0;
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 80px);
   width: 100%;
   background-color: ${({ isOpen }) =>
     isOpen
@@ -15,9 +15,9 @@ export const ModalBackground = styled.div`
 
 export const ModalWrapper = styled.div`
   position: fixed;
-  top: ${({ isOpen }) => (isOpen ? '5rem' : '200%')};
+  top: ${({ isOpen }) => (isOpen ? '80px' : '200%')};
   width: 100%;
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 80px);
   left: 0;
   display: flex;
   justify-content: center;

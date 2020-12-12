@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 export const Nav = styled.div`
   top: 0;
   background: var(--color-gray-dark);
-  height: 5rem;
+  height: 80px;
   display: flex;
   justify-content: center;
   position: sticky;
@@ -70,7 +70,7 @@ export const NavbarHamburgerIconWrapper = styled.div`
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 5rem;
+    width: 80px;
     font-size: 2rem;
     color: var(--color-white);
     cursor: pointer;
