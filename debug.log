@@ -2,3 +2,4 @@
 [1209/202055.370:ERROR:directory_reader_win.cc(43)] FindFirstFile: Das System kann den angegebenen Pfad nicht finden. (0x3)
 [1210/204530.293:ERROR:directory_reader_win.cc(43)] FindFirstFile: Das System kann den angegebenen Pfad nicht finden. (0x3)
 [1212/173135.061:ERROR:directory_reader_win.cc(43)] FindFirstFile: Das System kann den angegebenen Pfad nicht finden. (0x3)
+[1212/225537.224:ERROR:file_io.cc(90)] ReadExactly: expected 36, observed 0

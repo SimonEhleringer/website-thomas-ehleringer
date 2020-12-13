@@ -11,6 +11,7 @@ export const ModalBackground = styled.div`
       ? 'var(--color-gray-darker-transparent)'
       : 'var(--color-transparent)'};
   transition: background-color 0.2s ease-in-out;
+  z-index: 1000;
 `;
 
 export const ModalWrapper = styled.div`
@@ -24,6 +25,7 @@ export const ModalWrapper = styled.div`
   align-items: center;
   padding: 3rem;
   transition: top 0.2s ease-in-out;
+
   @media screen and (max-width: 500px) {
     padding: 1rem;
   }

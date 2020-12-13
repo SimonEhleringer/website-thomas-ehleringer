@@ -21,16 +21,21 @@ const Slider = ({ images, showText }) => {
       }
     };
 
-    const interval = setInterval(nextImage, 7000);
+    setTimeout(nextImage, 7000);
+    //const interval = setInterval(nextImage, 7000);
 
-    return () => clearInterval(interval);
-  }, [activeImageIndex]);
+    //return () => clearInterval(interval);
 
-  useEffect(() => {
     setShowTexts(false);
     setTimeout(() => setShowTexts(true), 1);
-    setTimeout(() => setShowTexts(false), 5499);
-  }, [activeImageIndex]);
+    setTimeout(() => setShowTexts(false), 5450);
+  }, [activeImageIndex, images.length]);
+
+  // useEffect(() => {
+  //   // setShowTexts(false);
+  //   // setTimeout(() => setShowTexts(true), 1);
+  //   // setTimeout(() => setShowTexts(false), 5490);
+  // }, [activeImageIndex]);
 
   return (
     <SliderContainer>
