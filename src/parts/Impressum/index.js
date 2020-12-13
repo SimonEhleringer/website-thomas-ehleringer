@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import impressum from '../../assets/impressum';
 import Wrapper from '../../components/Wrapper';
 import Container from '../../components/Container';
@@ -13,37 +13,39 @@ const Impressum = () => {
       <Container>
         <Heading>{heading}</Heading>
 
-        {points.map((point) => {
+        {points.map((point, pointIndex) => {
           const { heading, texts, subPoints } = point;
 
           return (
-            <>
-              <ImpressumH2>{heading}</ImpressumH2>
-              {texts.map((text) => {
+            <Fragment key={pointIndex}>
+              <ImpressumH2 key={pointIndex}>{heading}</ImpressumH2>
+              {texts.map((text, pointTextIndex) => {
                 return (
                   <ImpressumParagraph
+                    key={pointTextIndex}
                     dangerouslySetInnerHTML={{ __html: text }}
                   ></ImpressumParagraph>
                 );
               })}
 
-              {subPoints.map((subPoint) => {
+              {subPoints.map((subPoint, subPointIndex) => {
                 const { heading, texts } = subPoint;
 
                 return (
-                  <>
-                    <ImpressumH3>{heading}</ImpressumH3>
-                    {texts.map((text) => {
+                  <Fragment key={subPointIndex}>
+                    <ImpressumH3 key={subPointIndex}>{heading}</ImpressumH3>
+                    {texts.map((text, subPointTextIndex) => {
                       return (
                         <ImpressumParagraph
+                          key={subPointTextIndex}
                           dangerouslySetInnerHTML={{ __html: text }}
                         ></ImpressumParagraph>
                       );
                     })}
-                  </>
+                  </Fragment>
                 );
               })}
-            </>
+            </Fragment>
           );
         })}
       </Container>

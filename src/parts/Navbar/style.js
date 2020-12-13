@@ -34,7 +34,7 @@ export const NavbarLinks = styled.div`
   justify-content: space-between;
   align-items: stretch;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1400px) {
     display: none;
   }
 `;
@@ -65,7 +65,7 @@ export const NavbarLink = styled(Link)`
 export const NavbarHamburgerIconWrapper = styled.div`
   display: none;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1400px) {
     display: flex;
     justify-content: center;
     align-items: center;

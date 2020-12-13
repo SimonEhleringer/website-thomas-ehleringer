@@ -20,7 +20,7 @@ const navbarLinks = [
     to: 'kontakt',
   },
   {
-    name: 'Impressum',
+    name: 'Impressum / Datenschutz',
     to: 'impressum',
   },
 ];
