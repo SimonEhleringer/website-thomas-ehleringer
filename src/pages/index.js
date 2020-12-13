@@ -5,6 +5,7 @@ import BestellungVereidigung from '../parts/BestellungVereidigung';
 import Referenzen from '../parts/Referenzen';
 import Separator from '../components/Separator';
 import Kontakt from '../parts/Kontakt';
+import Impressum from '../parts/Impressum';
 
 const Index = () => {
   return (
@@ -16,6 +17,8 @@ const Index = () => {
       <Separator></Separator>
       <Referenzen></Referenzen>
       <Kontakt></Kontakt>
+      <Separator></Separator>
+      <Impressum></Impressum>
     </>
   );
 };

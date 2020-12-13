@@ -90,3 +90,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Faxnummer in Kontaktdaten mit rein machen
 
 - Klicks auf Website zählen
+
+- In der Navbar auf dem Link Impressum geht die Border zu weit nach rechts -> Margin statt padding
+
+- Im Impressum die Berufsbezeichnung und die UmsatzsteuerID richtig machen
