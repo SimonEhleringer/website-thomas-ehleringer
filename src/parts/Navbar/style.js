@@ -95,7 +95,7 @@ export const MobileNav = styled.div`
   display: flex;
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-  z-index: 1000;
+  z-index: 10000;
 `;
 
 export const MobileNavbarLinks = styled.div`

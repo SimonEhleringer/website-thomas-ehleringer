@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ScrollToTopButtonWrapper = styled.div`
   display: flex;
   position: fixed;
-  background-color: var(--color-gray-dark);
+  background-color: var(--color-gray-darker);
   font-size: 2rem;
   right: 0;
   bottom: 0;
@@ -23,4 +23,8 @@ export const ScrollToTopButtonWrapper = styled.div`
   }
 
   opacity: ${({ isVisible }) => (isVisible ? '1' : '0 !important')};
+
+  @media screen and (max-width: 600px) {
+    opacity: 0.5;
+  }
 `;
