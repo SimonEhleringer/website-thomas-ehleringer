@@ -91,8 +91,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 - Klicks auf Website zählen
 
-- In der Navbar auf dem Link Impressum geht die Border zu weit nach rechts -> Margin statt padding
-
 - Im Impressum die Berufsbezeichnung und die UmsatzsteuerID richtig machen
 
 - Wenn Modal offen ist, die Scrollbar trotzdem da lassen

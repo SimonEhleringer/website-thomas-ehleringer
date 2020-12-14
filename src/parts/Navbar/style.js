@@ -53,7 +53,7 @@ export const NavbarLink = styled(Link)`
   }
 
   &:last-child {
-    padding-right: 1.6rem;
+    margin-right: 0.8rem;
   }
 
   &.active {

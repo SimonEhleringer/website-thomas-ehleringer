@@ -15,13 +15,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Modal = ({ heading, text, image, isOpen, closeModal }) => {
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-  }, [isOpen]);
+  // useEffect(() => {
+  //   // if (isOpen) {
+  //   //   document.body.style.overflow = 'hidden';
+  //   // } else {
+  //   //   document.body.style.overflow = 'unset';
+  //   // }
+
+  //   if (isOpen) {
+  //     document.body.style.overflow = 'hidden';
+  //   } else {
+  //     document.body.style.overflow = 'unset';
+  //   }
+  // }, [isOpen]);
 
   return (
     <ModalBackground isOpen={isOpen}>

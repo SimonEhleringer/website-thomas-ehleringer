@@ -22,9 +22,6 @@ const Slider = ({ images, showText }) => {
     };
 
     setTimeout(nextImage, 7000);
-    //const interval = setInterval(nextImage, 7000);
-
-    //return () => clearInterval(interval);
 
     setShowTexts(false);
     setTimeout(() => setShowTexts(true), 1);
