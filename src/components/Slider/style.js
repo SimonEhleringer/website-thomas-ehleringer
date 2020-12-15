@@ -88,11 +88,9 @@ export const SliderImageTextWrapper = styled.div`
 
 export const SliderImageText = styled.p`
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--color-gray-dark);
   color: dark-grey;
-  font-family: 'Dancing Script';
-  font-weight: 700;
 
   @media screen and (max-width: 800px) {
     font-size: 1.4rem;
