@@ -1,9 +1,28 @@
 import styled from 'styled-components';
 
-export const SliderContainer = styled.div`
+export const SliderWrapper = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+`;
+
+export const SliderContent = styled.div`
+  transform: translateX(-${(props) => props.translate}px);
+  transition: transform ease-in-out ${(props) => props.transition}s;
+  height: 100%;
+  width: ${(props) => props.width}px;
+  display: flex;
+`;
+
+export const Slide = styled.div`
+  height: 100%;
+  width: 100%;
+  background-image: url('${({ content }) => content}');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 `;
 
 export const SliderImage = styled.div`
@@ -19,9 +38,12 @@ export const SliderImage = styled.div`
 `;
 
 export const SliderImageTextsWrapper = styled.div`
+  ${'' /* transform: translateX(-${(props) => props.translate}px); */}
   position: absolute;
   top: 0;
   left: 0;
+  ${'' /* height: 100%; */}
+  ${'' /* width: ${(props) => props.width}px; */}
   right: 0;
   bottom: 0;
   padding: 0.2rem;
@@ -47,7 +69,6 @@ export const SliderImageTextsWrapper = styled.div`
 `;
 
 export const SliderImageTextWrapper = styled.div`
-  ${'' /* background-color: var(--color-gray-light); */}
   position: absolute;
   top: ${({ positionY }) => positionY}%;
   left: ${({ positionX }) => positionX}%;
