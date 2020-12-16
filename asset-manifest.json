@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/website-thomas-ehleringer/static/css/main.f99b635f.chunk.css",
+    "main.js": "/website-thomas-ehleringer/static/js/main.76fc4eac.chunk.js",
+    "main.js.map": "/website-thomas-ehleringer/static/js/main.76fc4eac.chunk.js.map",
+    "runtime-main.js": "/website-thomas-ehleringer/static/js/runtime-main.3a53c5b9.js",
+    "runtime-main.js.map": "/website-thomas-ehleringer/static/js/runtime-main.3a53c5b9.js.map",
+    "static/js/2.03b39aed.chunk.js": "/website-thomas-ehleringer/static/js/2.03b39aed.chunk.js",
+    "static/js/2.03b39aed.chunk.js.map": "/website-thomas-ehleringer/static/js/2.03b39aed.chunk.js.map",
+    "index.html": "/website-thomas-ehleringer/index.html",
+    "static/css/main.f99b635f.chunk.css.map": "/website-thomas-ehleringer/static/css/main.f99b635f.chunk.css.map",
+    "static/js/2.03b39aed.chunk.js.LICENSE.txt": "/website-thomas-ehleringer/static/js/2.03b39aed.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/website-thomas-ehleringer/static/media/encode-sans-expanded-v5-latin-regular.b0eb4c14.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3a53c5b9.js",
+    "static/js/2.03b39aed.chunk.js",
+    "static/css/main.f99b635f.chunk.css",
+    "static/js/main.76fc4eac.chunk.js"
+  ]
+}
