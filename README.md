@@ -69,17 +69,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-- Links alle mit Funktion machen
+-// Links alle mit Funktion machen
 
-  - dann auch nochmal gucken, dass auf allen Links, cursor Pointer ist
+ // - dann auch nochmal gucken, dass auf allen Links, cursor Pointer ist
 
-- accessibility
+////- accessibility
 
-- Papas Datei aufteilen in: Heading, Paragraph, Address
+-// Papas Datei aufteilen in: Heading, Paragraph, Address
 
-- Bilder rauszoomen sowie bei Fendt website
+-// Bilder rauszoomen sowie bei Fendt website
 
-- Das Modal soll perfekt responsiv sein
+-// Das Modal soll perfekt responsiv sein
 
 - Feinschliff bei den Fonts. Die sehen manchmal noch nicht geil aus
 
@@ -93,4 +93,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 - Im Impressum die Berufsbezeichnung und die UmsatzsteuerID richtig machen
 
-- Wenn Modal offen ist, die Scrollbar trotzdem da lassen
+//- Wenn Modal offen ist, die Scrollbar trotzdem da lassen
+- Bilder im Modal laden lange
