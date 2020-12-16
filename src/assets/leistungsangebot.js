@@ -24,19 +24,19 @@ const leistungsangebot = {
       heading: 'Hofübergabe und Erbvorgang',
       description:
         'Lebzeitige Übergaben sind vorgezogene Erbvorgänge. Dabei wird sich bei der Bemessung von Abfindungen oft am Erbrecht orientiert. Eine sinnvolle Vertragsgestaltung kann spätere Probleme und viel Streit vermeiden.',
-      image: './assets/images/IMG_Leistungsangebot_1.JPG',
+      image: './assets/images/IMG_Leistungsangebot_4.JPG',
     },
     {
       heading: 'Pflichtteile',
       description:
         'Der Anspruch auf ein Pflichtteil ergibt sich aus dem Bürgerlichen Gesetzbuch und soll Abkömmlinge besonders schützen. Macht ein Abkömmling ein Pflichtteil geltend, so ist der Ausgleichspflichtige zur Auskunft verpflichtet und muss den Wert von Grundstücken durch ein Wertgutachten nachweisen.',
-      image: './assets/images/IMG_Leistungsangebot_1.JPG',
+      image: './assets/images/IMG_Leistungsangebot_5.JPG',
     },
     {
       heading: 'Ehescheidung',
       description:
         'Ehescheidungen bringen neben emotionalen Problemen auch materielle mit sich. Bei Zugewinngemeinschaften wird oft ein Zugewinnausgleich angestrebt. Dazu müssen Werte von Grundstücken, Gebäuden, Höfen, etc. bekannt sein. Für landwirtschaftliche Betriebe gibt es auch hier die Möglichkeit auf den sog. privilegierten Ertragswert zurückzugreifen, wenn der Ansatz des Verkehrswertes für den ausgleichspflichtigen Ehepartner nachteilig ist.',
-      image: './assets/images/IMG_Leistungsangebot_1.JPG',
+      image: './assets/images/IMG_Leistungsangebot_6.JPG',
     },
     {
       heading: 'Steuerwesen',

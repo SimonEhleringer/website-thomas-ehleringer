@@ -99,3 +99,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Kein Blocksatz auf Mobile
 
 - Icon bei Urkunde ändern
+
+- Bilder noch teils bissl beschneiden
