@@ -34,11 +34,21 @@ export const CardHeadingContainer = styled.div`
   align-items: center;
   flex-grow: 1;
   background-color: var(--color-white);
+  min-height: 3.5rem;
+
+  @media screen and (max-width: 600px) {
+    min-height: 3rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    min-height: 2.5rem;
+  }
 `;
 
-export const CardHeading = styled.p`
-  font-size: 1.2rem;
+export const CardHeading = styled.h2`
+  font-size: 1.3rem;
   text-align: center;
+  font-weight: normal;
 
   @media screen and (max-width: 600px) {
     font-size: 1.1rem;

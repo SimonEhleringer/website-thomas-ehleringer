@@ -69,13 +69,14 @@ export const ModalTextSectionContainer = styled.div`
   overflow-x: auto;
 `;
 
-export const ModalHeading = styled.p`
+export const ModalHeading = styled.h1`
   font-size: 2rem;
   padding: 0.5rem 0;
   margin-bottom: 0.5rem;
   border-bottom: 2px solid var(--color-green);
   text-align: center;
   word-break: break-word;
+  font-weight: normal;
 
   @media screen and (max-width: 600px) {
     font-size: 1.5rem;

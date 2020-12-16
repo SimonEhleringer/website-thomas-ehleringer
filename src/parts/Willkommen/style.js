@@ -57,7 +57,7 @@ export const WelcomeTextAddressJobTitleWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 1.5rem 0;
+  padding: 1.5rem 1.6rem;
   background-color: var(--color-gray-light);
   border-top: 1px solid var(--color-gray);
   border-bottom: 1px solid var(--color-gray);

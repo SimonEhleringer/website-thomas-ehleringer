@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const HeadingComponent = styled.p`
+export const HeadingComponent = styled.h1`
   padding: 0.5rem 0;
   font-size: 2rem;
   border-bottom: 2px solid var(--color-green);

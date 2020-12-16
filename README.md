@@ -85,7 +85,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 - Performance vom Slider
 
-- Gesamte Website auf Galaxy-Fold ist etwas verbuggt
+//- Gesamte Website auf Galaxy-Fold ist etwas verbuggt
 
 - Faxnummer in Kontaktdaten mit rein machen
 

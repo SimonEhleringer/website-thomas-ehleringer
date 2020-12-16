@@ -86,11 +86,12 @@ export const SliderImageTextWrapper = styled.div`
   }
 `;
 
-export const SliderImageText = styled.p`
+export const SliderImageText = styled.h2`
   text-align: center;
   font-size: 1.6rem;
   color: var(--color-gray-dark);
   color: dark-grey;
+  font-weight: 600;
 
   @media screen and (max-width: 800px) {
     font-size: 1.4rem;
