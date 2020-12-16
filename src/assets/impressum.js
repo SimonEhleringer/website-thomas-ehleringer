@@ -17,6 +17,7 @@ const impressum = {
       heading: 'Kontakt',
       texts: [
         `Telefon: 06553/3177 <br>
+        Telefax: 06553/901073 <br>
         E-Mail: Thomas@Ehleringer.de`,
       ],
       subPoints: [],
@@ -25,7 +26,7 @@ const impressum = {
       heading: 'Umsatzsteuer-ID',
       texts: [
         `Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br>
-        UmsatzSteuerID`,
+        DE 179496121`,
       ],
       subPoints: [],
     },

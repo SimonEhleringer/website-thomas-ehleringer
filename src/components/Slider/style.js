@@ -91,7 +91,8 @@ export const SliderImageText = styled.h2`
   font-size: 1.6rem;
   color: var(--color-gray-dark);
   color: dark-grey;
-  font-weight: 600;
+  font-weight: normal;
+  font-style: italic;
 
   @media screen and (max-width: 800px) {
     font-size: 1.4rem;

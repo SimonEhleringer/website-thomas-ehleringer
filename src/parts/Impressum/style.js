@@ -4,6 +4,7 @@ export const ImpressumH2 = styled.h2`
   font-size: 1.5rem;
   padding: 0.5rem;
   text-align: center;
+  font-weight: 600;
 
   @media screen and (max-width: 600px) {
     font-size: 1.3rem;
@@ -18,6 +19,7 @@ export const ImpressumH3 = styled.h3`
   font-size: 1.3rem;
   padding: 0.5rem;
   text-align: center;
+  font-weight: 600;
 
   @media screen and (max-width: 600px) {
     font-size: 1.1rem;

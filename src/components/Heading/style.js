@@ -7,6 +7,7 @@ export const HeadingComponent = styled.h1`
   margin-bottom: 0.5rem;
   color: var(--color-gray-darker);
   text-align: center;
+  font-weight: normal;
 
   @media screen and (max-width: 600px) {
     font-size: 1.8rem;

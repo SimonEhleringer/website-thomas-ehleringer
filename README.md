@@ -71,7 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 -// Links alle mit Funktion machen
 
- // - dann auch nochmal gucken, dass auf allen Links, cursor Pointer ist
+// - dann auch nochmal gucken, dass auf allen Links, cursor Pointer ist
 
 ////- accessibility
 
@@ -81,17 +81,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 -// Das Modal soll perfekt responsiv sein
 
-- Feinschliff bei den Fonts. Die sehen manchmal noch nicht geil aus
+//- Feinschliff bei den Fonts. Die sehen manchmal noch nicht geil aus
 
 - Performance vom Slider
 
 //- Gesamte Website auf Galaxy-Fold ist etwas verbuggt
 
-- Faxnummer in Kontaktdaten mit rein machen
+//- Faxnummer in Kontaktdaten mit rein machen
 
 - Klicks auf Website zählen
 
-- Im Impressum die Berufsbezeichnung und die UmsatzsteuerID richtig machen
+//- Im Impressum die Berufsbezeichnung und die UmsatzsteuerID richtig machen
 
 //- Wenn Modal offen ist, die Scrollbar trotzdem da lassen
+
 - Bilder im Modal laden lange
+- Kein Blocksatz auf Mobile
+
+- Icon bei Urkunde ändern
