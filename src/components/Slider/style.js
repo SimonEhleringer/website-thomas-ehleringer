@@ -26,15 +26,19 @@ export const Slide = styled.div`
 `;
 
 export const SliderImage = styled.div`
+  position: absolute;
   height: 100%;
   width: 100%;
   background-image: url(${({ img }) => img});
   background-size: cover;
   background-position: center center;
-  transition: 1.5s ease-in;
   display: flex;
   justify-content: center;
   align-items: center;
+  filter: opacity(${({ show }) => (show ? '100%' : '0%')});
+  transition: filter 1.5s ease-in;
+  .opacity: ${({ show }) => (show ? '1' : '0.5')};
+  .z-index: ${({ show }) => (show ? '100' : '0')}; 
 `;
 
 export const SliderImageTextsWrapper = styled.div`
