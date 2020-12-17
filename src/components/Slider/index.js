@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, Fragment } from 'react';
 import { useEffect } from 'react/cjs/react.development';
 import {
   SliderWrapper,
@@ -10,8 +10,6 @@ import {
 
 const Slider = ({ images, showText }) => {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
-  const [showTexts, setShowTexts] = useState(true);
-  // const [areTextsFadingOut, setAreTextsFadingOut] = useState(false);
 
   const nextImage = () => {
     if (activeImageIndex === images.length - 1) {
@@ -39,45 +37,23 @@ const Slider = ({ images, showText }) => {
     };
   }, []);
 
-  // useEffect(() => {
-  //   const nextImage = () => {
-  //     if (activeImageIndex === images.length - 1) {
-  //       setActiveImageIndex(0);
-  //     } else {
-  //       setActiveImageIndex(activeImageIndex + 1);
-  //     }
-  //   };
-
-  //   setTimeout(nextImage, 7000);
-
-  //   setShowTexts(false);
-  //   setTimeout(() => setShowTexts(true), 1);
-  //   setTimeout(() => setShowTexts(false), 5450);
-  // }, [activeImageIndex, images.length]);
-
-  // useEffect(() => {
-  //   // setShowTexts(false);
-  //   // setTimeout(() => setShowTexts(true), 1);
-  //   // setTimeout(() => setShowTexts(false), 5490);
-  // }, [activeImageIndex]);
-
-
-
   return (
     <SliderWrapper>
-      {images.map((image, index) => {
-        return <>
-          <SliderImage key={index} img={image.path} show={index === activeImageIndex}></SliderImage>
+      {images.map((image, imageIndex) => {
+        const show = imageIndex === activeImageIndex;
+
+        return <Fragment key={imageIndex}>
+          <SliderImage img={image.path} show={show}></SliderImage>
 
           {showText && (
             <SliderImageTextsWrapper>
-              {images[activeImageIndex].texts.map((textObj, index) => {
+              {image.texts.map((textObj, textIndex) => {
                 const { text, positionX, positionY } = textObj;
 
                 return (
                   <SliderImageTextWrapper
-                    key={index}
-                    show={false}
+                    key={textIndex}
+                    show={show}
                     positionX={positionX}
                     positionY={positionY}
                   >
@@ -87,28 +63,8 @@ const Slider = ({ images, showText }) => {
               })}
             </SliderImageTextsWrapper>
           )}
-        </>
+        </Fragment>
       })}
-      {/* <SliderImage img={images[activeImageIndex].path}></SliderImage>
-
-      {showText && (
-        <SliderImageTextsWrapper>
-          {images[activeImageIndex].texts.map((textObj, index) => {
-            const { text, positionX, positionY } = textObj;
-
-            return (
-              <SliderImageTextWrapper
-                key={index}
-                show={showTexts}
-                positionX={positionX}
-                positionY={positionY}
-              >
-                <SliderImageText>{text}</SliderImageText>
-              </SliderImageTextWrapper>
-            );
-          })}
-        </SliderImageTextsWrapper>
-      )} */}
     </SliderWrapper>
   );
 };
