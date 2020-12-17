@@ -1,3 +1,15 @@
+# Thomas Ehleringer's Website
+Website to show Thomas Ehleringer's portfolio, written in React.
+
+## General info
+Thomas Ehleringer is a country appraiser from Germany.
+
+This website shows his portfolio, qualification and how to contact him.
+
+## Technologies
+This project is created with:
+* [React 17.0.1](https://reactjs.org/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
