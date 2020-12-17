@@ -1,5 +1,4 @@
-import React, { useState, useRef, Fragment } from 'react';
-import { useEffect } from 'react/cjs/react.development';
+import React, { useState, useRef, useEffect, Fragment } from 'react';
 import {
   SliderWrapper,
   SliderImage,
