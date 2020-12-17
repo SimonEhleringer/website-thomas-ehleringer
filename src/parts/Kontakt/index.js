@@ -24,7 +24,7 @@ const Kontakt = () => {
 
         <KontaktContainer>
           <KontaktImgWrapper>
-            <KontaktImg src={image} />
+            <KontaktImg src={process.env.PUBLIC_URL + image} />
           </KontaktImgWrapper>
 
           <KontaktAddressJobtitleContainer>

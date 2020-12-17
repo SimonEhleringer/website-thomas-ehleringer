@@ -28,7 +28,7 @@ const bestellungVereidigung = {
     ],
   },
 
-  urkunde: './assets/downloads/Urkunde_OeffentlicheBestellung.pdf',
+  urkunde: '/assets/downloads/Urkunde_OeffentlicheBestellung.pdf',
 };
 
 export default bestellungVereidigung;

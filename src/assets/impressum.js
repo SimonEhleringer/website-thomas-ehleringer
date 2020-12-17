@@ -57,7 +57,7 @@ const impressum = {
             'Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.',
             `Quelle:<br>
               <a href="https://www.e-recht24.de">e-recht24.de</a>`,
-            '<a href="./assets/downloads/Datenschutzerklaerung.pdf" target="_blank">Datenschutzerklärung einsehen</a>',
+            `<a href="${process.env.PUBLIC_URL}/assets/downloads/Datenschutzerklaerung.pdf" target="_blank">Datenschutzerklärung einsehen</a>`,
           ],
         },
       ],

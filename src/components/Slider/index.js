@@ -42,28 +42,33 @@ const Slider = ({ images, showText }) => {
       {images.map((image, imageIndex) => {
         const show = imageIndex === activeImageIndex;
 
-        return <Fragment key={imageIndex}>
-          <SliderImage img={image.path} show={show}></SliderImage>
+        return (
+          <Fragment key={imageIndex}>
+            <SliderImage
+              img={process.env.PUBLIC_URL + image.path}
+              show={show}
+            ></SliderImage>
 
-          {showText && (
-            <SliderImageTextsWrapper>
-              {image.texts.map((textObj, textIndex) => {
-                const { text, positionX, positionY } = textObj;
+            {showText && (
+              <SliderImageTextsWrapper>
+                {image.texts.map((textObj, textIndex) => {
+                  const { text, positionX, positionY } = textObj;
 
-                return (
-                  <SliderImageTextWrapper
-                    key={textIndex}
-                    show={show}
-                    positionX={positionX}
-                    positionY={positionY}
-                  >
-                    <SliderImageText>{text}</SliderImageText>
-                  </SliderImageTextWrapper>
-                );
-              })}
-            </SliderImageTextsWrapper>
-          )}
-        </Fragment>
+                  return (
+                    <SliderImageTextWrapper
+                      key={textIndex}
+                      show={show}
+                      positionX={positionX}
+                      positionY={positionY}
+                    >
+                      <SliderImageText>{text}</SliderImageText>
+                    </SliderImageTextWrapper>
+                  );
+                })}
+              </SliderImageTextsWrapper>
+            )}
+          </Fragment>
+        );
       })}
     </SliderWrapper>
   );

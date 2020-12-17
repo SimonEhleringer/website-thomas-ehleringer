@@ -28,7 +28,7 @@ const Modal = ({ heading, text, image, isOpen, closeModal }) => {
           </ModalTextSectionContainer>
 
           <ModalImageContainer>
-            <ModalImage src={image}></ModalImage>
+            <ModalImage src={process.env.PUBLIC_URL + image}></ModalImage>
           </ModalImageContainer>
 
           <ModalCloseIconContainer onClick={closeModal}>

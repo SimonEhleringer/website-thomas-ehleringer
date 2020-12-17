@@ -1,6 +1,6 @@
 const willkommenImages = [
   {
-    path: './assets/images/IMG_Willkommen_1.JPG',
+    path: '/assets/images/IMG_Willkommen_1.JPG',
     texts: [
       {
         text: 'Wertermittlung im ländlichen Raum',
@@ -10,9 +10,9 @@ const willkommenImages = [
     ],
   },
   {
-    path: './assets/images/IMG_Willkommen_2.JPG',
+    path: '/assets/images/IMG_Willkommen_2.JPG',
     texts: [
-      {  
+      {
         text: 'Landwirtschaftliche Grundstücke',
         positionX: 30,
         positionY: 80,
@@ -20,7 +20,7 @@ const willkommenImages = [
     ],
   },
   {
-    path: './assets/images/IMG_Willkommen_3.JPG',
+    path: '/assets/images/IMG_Willkommen_3.JPG',
     texts: [
       {
         text: 'Ganze Betriebe',
@@ -30,7 +30,7 @@ const willkommenImages = [
     ],
   },
   {
-    path: './assets/images/IMG_Willkommen_4.JPG',
+    path: '/assets/images/IMG_Willkommen_4.JPG',
     texts: [
       {
         text: 'Erneuerbare Energien',
@@ -40,7 +40,7 @@ const willkommenImages = [
     ],
   },
   {
-    path: './assets/images/IMG_Willkommen_5.JPG',
+    path: '/assets/images/IMG_Willkommen_5.JPG',
     texts: [
       {
         text: 'Ein Schloss ...',
@@ -50,7 +50,7 @@ const willkommenImages = [
     ],
   },
   {
-    path: './assets/images/IMG_Willkommen_6.JPG',
+    path: '/assets/images/IMG_Willkommen_6.JPG',
     texts: [
       {
         text: '... oder ein Haus im Grünen ...',
@@ -60,7 +60,7 @@ const willkommenImages = [
     ],
   },
   {
-    path: './assets/images/IMG_Willkommen_7.JPG',
+    path: '/assets/images/IMG_Willkommen_7.JPG',
     texts: [
       {
         text: '... oder eine Hütte',
@@ -75,7 +75,7 @@ const willkommenImages = [
     ],
   },
   {
-    path: './assets/images/IMG_Willkommen_8.JPG',
+    path: '/assets/images/IMG_Willkommen_8.JPG',
     texts: [],
   },
 ];

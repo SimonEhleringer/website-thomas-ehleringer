@@ -44,7 +44,7 @@ const BestellungVereidigung = () => {
               Klicken Sie{' '}
             </BestellungVereidigungUrkundeDownloadSpan>
             <BestellungVereidigungUrkundeDownloadA
-              href={urkunde}
+              href={process.env.PUBLIC_URL + urkunde}
               target='_blank'
             >
               hier

@@ -1,5 +1,5 @@
 import './App.css';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Index from './pages/index';
 import Navbar from './parts/Navbar';
 import ScrollToTopButton from './components/ScrollToTopButton';
@@ -11,9 +11,9 @@ function App() {
       <Navbar />
       <ScrollToTopButton></ScrollToTopButton>
 
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route path='/' component={Index} exact />
+          <Route path={'/'} component={Index} exact />
         </Switch>
       </Router>
 
