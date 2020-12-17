@@ -8,7 +8,13 @@ This website shows his portfolio, qualification and how to contact him.
 
 ## Technologies
 This project is created with:
-* [React 17.0.1](https://reactjs.org/)
+* [React](https://reactjs.org/)
+* [React Scroll](https://github.com/fisshy/react-scroll)
+* [React Router](https://reactrouter.com/)
+* [React Router](https://styled-components.com/)
+* [React Fontawesome](https://github.com/FortAwesome/react-fontawesome)
+
+
 
 # Getting Started with Create React App
 
