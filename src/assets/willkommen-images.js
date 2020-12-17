@@ -12,7 +12,7 @@ const willkommenImages = [
   {
     path: './assets/images/IMG_Willkommen_2.JPG',
     texts: [
-      {
+      {  
         text: 'Landwirtschaftliche Grundstücke',
         positionX: 30,
         positionY: 80,

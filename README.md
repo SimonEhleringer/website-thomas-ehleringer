@@ -11,5 +11,5 @@ This project is created with:
 * [React](https://reactjs.org/)
 * [React Scroll](https://github.com/fisshy/react-scroll)
 * [React Router](https://reactrouter.com/)
-* [React Router](https://styled-components.com/)
+* [React Router](https://styled-components.com/)  
 * [React Fontawesome](https://github.com/FortAwesome/react-fontawesome)
