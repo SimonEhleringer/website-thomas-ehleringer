@@ -11,7 +11,7 @@ import {
   MobileNavbarLink,
   MobileCloseIcon,
 } from './style';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import navbarLinks from '../../assets/navbar-links';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
