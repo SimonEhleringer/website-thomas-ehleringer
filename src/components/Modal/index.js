@@ -14,7 +14,14 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
-const Modal = ({ heading, text, image, isOpen, closeModal }) => {
+const Modal = ({
+  heading,
+  text,
+  image,
+  isOpen,
+  closeModal,
+  isCloseIconWhite,
+}) => {
   return (
     <ModalBackground isOpen={isOpen}>
       <ModalWrapper isOpen={isOpen}>
@@ -31,7 +38,10 @@ const Modal = ({ heading, text, image, isOpen, closeModal }) => {
             <ModalImage src={process.env.PUBLIC_URL + image}></ModalImage>
           </ModalImageContainer>
 
-          <ModalCloseIconContainer onClick={closeModal}>
+          <ModalCloseIconContainer
+            onClick={closeModal}
+            isCloseIconWhite={isCloseIconWhite}
+          >
             <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
           </ModalCloseIconContainer>
         </ModalContainer>

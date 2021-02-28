@@ -10,15 +10,19 @@ const Leistungsangebot = () => {
   const [modalImage, setModalImage] = useState('');
   const [modalHeading, setModalHeading] = useState('');
   const [modalText, setModalText] = useState('');
+  const [modalIsCloseIconWhite, setModalIsCloseIconWhite] = useState(false);
 
   const { id, heading, leistungsangebote } = leistungsangebot;
 
   const handleCardClick = (index) => {
-    const { image, heading, description } = leistungsangebote[index];
+    const { image, heading, description, isCloseIconWhite } = leistungsangebote[
+      index
+    ];
 
     setModalImage(image);
     setModalHeading(heading);
     setModalText(description);
+    setModalIsCloseIconWhite(isCloseIconWhite);
 
     setIsModalOpen(true);
   };
@@ -52,6 +56,7 @@ const Leistungsangebot = () => {
         image={modalImage}
         heading={modalHeading}
         text={modalText}
+        isCloseIconWhite={modalIsCloseIconWhite}
         isOpen={isModalOpen}
         closeModal={closeModal}
       ></Modal>

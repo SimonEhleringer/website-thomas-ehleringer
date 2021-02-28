@@ -137,5 +137,8 @@ export const ModalCloseIconContainer = styled.div`
   width: 4rem;
   padding: 0 0 1rem 1rem;
   cursor: pointer;
-  color: var(--color-gray-darker);
+  color: ${({ isCloseIconWhite }) =>
+    isCloseIconWhite ? 'var(--color-white)' : 'var(--color-gray-darker)'};
 `;
+
+//${({ isOpen }) => (isOpen ? '80px' : '200%')};
