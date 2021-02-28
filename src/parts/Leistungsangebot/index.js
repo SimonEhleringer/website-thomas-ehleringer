@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 import leistungsangebot from '../../assets/leistungsangebot';
 import Heading from '../../components/Heading';
-import { LeistungsangebotWrapper, LeistungsangebotContainer } from './style';
+import {
+  LeistungsangebotWrapper,
+  LeistungsangebotContainer,
+  LeistungsangebotParagraphContainer,
+} from './style';
 import Card from '../../components/Card';
 import Modal from '../../components/Modal';
+import Paragraph from '../../components/Paragraph';
 
 const Leistungsangebot = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -35,6 +40,11 @@ const Leistungsangebot = () => {
     <>
       <LeistungsangebotWrapper id={id}>
         <Heading>{heading}</Heading>
+        <LeistungsangebotParagraphContainer>
+          <Paragraph>
+            Klicken Sie auf eines der Bilder, um mehr zu erfahren.
+          </Paragraph>
+        </LeistungsangebotParagraphContainer>
 
         <LeistungsangebotContainer>
           {leistungsangebote.map((leistung, index) => {

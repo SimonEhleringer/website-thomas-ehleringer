@@ -8,6 +8,10 @@ export const LeistungsangebotWrapper = styled.div`
   padding: 1.5rem 0;
 `;
 
+export const LeistungsangebotParagraphContainer = styled.div`
+  padding: 0 1.6rem;
+`;
+
 export const LeistungsangebotContainer = styled.div`
   max-width: 1500px;
   width: 100%;
