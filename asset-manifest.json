@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.c0d8b2a2.chunk.css",
-    "main.js": "/static/js/main.643b7544.chunk.js",
-    "main.js.map": "/static/js/main.643b7544.chunk.js.map",
+    "main.js": "/static/js/main.92645293.chunk.js",
+    "main.js.map": "/static/js/main.92645293.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.468792f2.js",
     "runtime-main.js.map": "/static/js/runtime-main.468792f2.js.map",
-    "static/js/2.13c17554.chunk.js": "/static/js/2.13c17554.chunk.js",
-    "static/js/2.13c17554.chunk.js.map": "/static/js/2.13c17554.chunk.js.map",
+    "static/js/2.36866d16.chunk.js": "/static/js/2.36866d16.chunk.js",
+    "static/js/2.36866d16.chunk.js.map": "/static/js/2.36866d16.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.c0d8b2a2.chunk.css.map": "/static/css/main.c0d8b2a2.chunk.css.map",
-    "static/js/2.13c17554.chunk.js.LICENSE.txt": "/static/js/2.13c17554.chunk.js.LICENSE.txt",
+    "static/js/2.36866d16.chunk.js.LICENSE.txt": "/static/js/2.36866d16.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/encode-sans-expanded-v5-latin-regular.b0eb4c14.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.468792f2.js",
-    "static/js/2.13c17554.chunk.js",
+    "static/js/2.36866d16.chunk.js",
     "static/css/main.c0d8b2a2.chunk.css",
-    "static/js/main.643b7544.chunk.js"
+    "static/js/main.92645293.chunk.js"
   ]
 }
