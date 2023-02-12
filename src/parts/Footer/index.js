@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   FooterWrapper,
   FooterContainer,
@@ -6,10 +6,10 @@ import {
   FooterText,
   FooterTextSpan,
   FooterTextSpanDesigner,
-} from './style';
-import footer from '../../assets/footer';
+} from "./style";
+import footer from "../../assets/footer";
 
-// text: '© 2020 Thomas Ehleringer',
+// text: '© 2023 Thomas Ehleringer',
 // designerText: 'Designed by',
 // designerName: 'Simon Ehleringer',
 // photosByText: 'Photos by',
@@ -32,7 +32,7 @@ const Footer = () => {
           <FooterTextSpanDesigner>{designerName}</FooterTextSpanDesigner>
           <FooterTextSpan disableWhenSmall={true}> | </FooterTextSpan>
         </FooterTextWrapper>
-        
+
         <FooterTextWrapper>
           <FooterText>{photosByText}</FooterText>
           <FooterTextSpan> </FooterTextSpan>
